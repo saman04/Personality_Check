@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FACEBOOK PERSONALITY SYNTHESIS</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <script
+        src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+        </noscript>
+    </head>
+    <body class="landing" ng-app="myapp" ng-controller="mycontroller">
+
+        <section id="one" class="wrapper style1">
+            <div class="container 75%">
+                <div class="row 200%">
+                    <div class="6u 12u$(medium)">
+                        <header class="major">
+                            <h2>Extracted Posts</h2>
+
+                        </header>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner -->
+        <section id="banner">
+            <h2>Facebook Personality Synthesis</h2>
+            <p>Analyse your personality</p>
+            <ul class="actions">
+                <li><input type="button" ng-click="login()" id="analyze" value="Analyze" style="background-color:#f32853; font-size:2em;" ></li>
+            </ul>
+        </section>
+
+       
+
+        <!-- Two -->
+        <section id="two" class="wrapper style2 special">
+            <div class="container">
+                <header class="major">
+                    <h2>BIG FIVE MODEL</h2>
+                </header>
+
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section id="four" class="wrapper style3 special" style="color:white;">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature">
+                        <div class="image rounded"><img src="images/1.jpg" alt="" /></div>
+                        <div class="content">
+                            <header>
+                                <h4 style="color:white;">OPENNESS</h4>
+                            </header>
+                            <input type="text" id="o" value="" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="image rounded"><img src="images/4.jpg" alt="" /></div>
+                        <div class="content">
+                            <header>
+                                <h4 style="color:white;">CONSCIENTIOUSNESS</h4>
+
+                            </header>
+                            <input type="text" id="c" value="" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="image rounded"><img src="images/5.jpg" alt="" /></div>
+                        <div class="content">
+                            <header>
+                                <h4 style="color:white;">EXTRAVERSION</h4>
+                                
+                            </header>
+               <input type="text" id="e" value="" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="image rounded"><img src="images/3.jpg" alt="" /></div>
+                        <div class="content">
+                            <header>
+                                <h4 style="color:white;">AGREEABLENESS</h4>
+
+                            </header>
+                            <input type="text" id="a" value="" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="feature" >
+                        <div class="image rounded"><img src="images/6.jpg" alt="" /></div>
+                        <div class="content">
+                            <header>
+                                <h4 style="color:white;">NEUROTICISM</h4>
+
+                            </header>
+                         <input type="text" name="n" value="" disabled="disabled" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+
+
+            </div>
+        </footer>
+        <script>
+            var myapp = angular.module('myapp', []);
+            myapp.controller('mycontroller', function ($scope, $http) {
+                $scope.login = function () {
+                        alert("hi");
+                        var btn=document.getElementById("analyze");
+                        btn.style.backgroundColor = "#32CD32";
+                };
+                
+            });
+        </script>
+
+    </body>
+</html>
